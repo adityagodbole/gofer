@@ -16,7 +16,7 @@ help = "press :? for a list of commands"
 -- Operator precedence table: -----------------------------------------------
 
 infixl 9 !!
---infixr 9 .
+infixr 9 .
 infixr 8 ^
 infixl 7 *
 infix  7 /, `div`, `quot`, `rem`, `mod`
