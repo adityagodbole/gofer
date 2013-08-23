@@ -25,12 +25,12 @@ COBJECTS	= gofc.o cbuiltin.o cmachine.o $(OBJECTS)
 # below).
 
 # Choose one of these (ATM 64-bit is not working)
-CC		= i686-w64-mingw32-gcc-4.6
+CC		= gcc
 #CC		= x86_64-w64-mingw32-gcc
 #CC		= gcc
-#CFLAGS		= -DUSE_READLINE=1
-CFLAGS		=
-LDFLAGS    	= -lm
+CFLAGS		= -DUSE_READLINE=1
+#CFLAGS		= 
+LDFLAGS    	= -lm -lreadline
 OPTFLAGS	= -O
 OPT1		=
 #OPT1		= -O1

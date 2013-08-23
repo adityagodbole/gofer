@@ -43,8 +43,8 @@
 #define AIX	 0	/* For IBM AIX on RS/6000 using GCC		   */
 #define ATARI	 0	/* For Atari ST/STE/TT/Falcon w/ Lattice C 5.52 UN */
 #define SGI4	 0	/* For SiliconGraphics Indigo, IRIX v*4*.0.5	UN */
-#define NETBSD	 0	/* For NetBSD-current				   */
-#define WIN32	 1	/* rusi aug 2013 */
+#define NETBSD	 1	/* For NetBSD-current				   */
+#define WIN32	 0	/* rusi aug 2013 */
 
 /*---------------------------------------------------------------------------
  * To add a new machine/compiler, add a new macro line above, add the new
