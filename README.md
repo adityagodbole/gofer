@@ -1,6 +1,7 @@
 ## To compile pugofer:
 
 In the source directory `src`:
+
 0. Edit prelude.h to set your platform to 1. Make sure that others are set to 0. Note that OSX compiles with NETBSD.
 0. Edit the Makefile to suit your needs
 0. run 'make'
@@ -44,3 +45,16 @@ Gofer session for:
 /var/folders/lh/tf7l9p512hnd5jkhgrb1rfz40000gn/T//pugofer-18161.hs
 ?
 ```
+
+## Web Server
+
+Using tty.js nodejs module, you can access pugofer over a web server.
+
+0. Install nodejs using a native package or [get it here](http://nodejs.org/download/).
+1. Inside the `server` directory, run `install.sh` to install the npm dependencies.
+2. Edit the config in `server.js` and the user CSS in `serverstatic/user.css` to your liking.
+3. Start with `node server.js`
+
+**Note:** Don't change the `shell` configuration in `server.js` unless you know what you are doing.
+
+Click on "Open Terminal" to launch a gofer session
