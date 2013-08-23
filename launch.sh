@@ -11,7 +11,6 @@ if [[ -z $prelude ]]; then
 	prelude='pusimple'
 fi
 export PUGOFER="$selfdir/lib/$prelude.prelude"
-echo $*
 $GOFER $* $initial
 rm -f $initial
 
