@@ -16,7 +16,7 @@ static Void local endIPCmd    Args((Void));
 static Void local banner      Args((Void));
 static Void local bannerContents Args((Void));
 static Void local infWhatFiles Args((Void));
-static Bool infProc = TRUE;
+static Bool infProc = FALSE;
 static char *infCh   = "";
 
 static Void   local toggleSet	      Args((Char,Bool));
