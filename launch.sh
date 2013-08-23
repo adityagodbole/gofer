@@ -6,11 +6,12 @@ GOFER=`which gofer`
 if [[ -z $GOFER ]]; then
 	GOFER="$selfdir/src/gofer"
 fi
-prelude=$1
+prelude=$GOFERPRE
 if [[ -z $prelude ]]; then
 	prelude='pusimple'
 fi
 export PUGOFER="$selfdir/lib/$prelude.prelude"
-$GOFER $initial
+echo $*
+$GOFER $* $initial
 rm -f $initial
 
