@@ -14,7 +14,7 @@ Running `./launch.sh` from the repostory root should give you a gofer session
 with a temporary module loaded along with the prelude. You can type `:e` to
 edit the temporary module in $EDITOR. Quitting the editor causes the changes
 to be reloaded.
-The name of the prelude can given in the ENV variable `PRELUDE`. By default, it is 
+The name of the prelude can given in the ENV variable `GOFERPRE`. By default, it is 
 `pusimple`. All arguments passed to launch.sh will be subsequently passed to the
 gofer command.
 
