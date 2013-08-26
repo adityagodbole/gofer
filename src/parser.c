@@ -2591,15 +2591,7 @@ yyreduce:
 
   case 141:
 #line 376 "parser.y"
-    {
-		if (newSyntax)
-		{
-		  ERROR(row) "Juxtaposition has no meaning. Use ."
-		  EEND;
-		}
-		else
-		  (yyval) = gc2(ap((yyvsp[(1) - (2)]),(yyvsp[(2) - (2)])));
-	      }
+    { (yyval) = gc2(ap((yyvsp[(1) - (2)]),(yyvsp[(2) - (2)]))); }
     break;
 
   case 142:

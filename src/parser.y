@@ -373,15 +373,7 @@ pats	  : pats atomic			{$$ = gc2(cons($2,$1));}
 	  | atomic			{$$ = gc1(cons($1,NIL));}
 	  ;
 appExp	  : appExp atomic	
-	      {
-		if (newSyntax)
-		{
-		  ERROR(row) "Juxtaposition has no meaning. Use ."
-		  EEND;
-		}
-		else
-		  $$ = gc2(ap($1,$2));
-	      }
+	      { $$ = gc2(ap($1,$2)); }
 	  | TRUNST atomic		{$$ = gc2(ap(RUNST,$2));}
 	  | atomic			{$$ = $1;}
 	  ;

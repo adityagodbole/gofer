@@ -1802,15 +1802,7 @@ case 136:{yyval = gc6(ap(CASE,pair(yypvt[-4],rev(yypvt[-1]))));} break;
 case 137:{yyval = yypvt[-0];} break;
 case 138:{yyval = gc2(cons(yypvt[-0],yypvt[-1]));} break;
 case 139:{yyval = gc1(cons(yypvt[-0],NIL));} break;
-case 140:{
-		if (newSyntax)
-		{
-		  ERROR(row) "Juxtaposition has no meaning. Use ."
-		  EEND;
-		}
-		else
-		  yyval = gc2(ap(yypvt[-1],yypvt[-0]));
-	      } break;
+case 140:{yyval = gc2(ap(yypvt[-1],yypvt[-0]));} break;
 case 141:{yyval = gc2(ap(RUNST,yypvt[-0]));} break;
 case 142:{yyval = yypvt[-0];} break;
 case 143:{yyval = yypvt[-0];} break;
