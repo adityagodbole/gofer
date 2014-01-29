@@ -1,5 +1,6 @@
 #!/bin/bash
-initial=$TMPDIR/pugofer-$RANDOM.hs
+
+initial=`mktemp -u -t pugofer-XXXX.hs`
 echo 'this = "Gofer scratchpad. Delete this line."' >  $initial
 selfdir=`dirname $0`
 GOFER=`which gofer`
